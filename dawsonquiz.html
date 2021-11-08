@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur Dawson</title>
+    <link rel="stylesheet" href="dawsonstyle.css">
+</head>
+<body>
+
+    <script>
+        let good = "<span>► Bravo! Un point pour vous!   Well done! You get 1 point. ◄</span>";
+        let wrong = "► Meilleure chance la prochaine fois! Aucun point gagné.   Better luck next time! No point earned. ◄";
+        let score = 0;
+
+        let question1 = "Question 1 : Quel acteur était le plus jeune au début de la saison 1?   Which actor was the youngest at the beginning of season 1? \n\nA) James Van Der Beek \nB) Katie Holmes \nC) Joshua Jackson \nD) Michelle Williams \n\n";
+        let reponse1_user = prompt(question1);
+        let reponse1_comment = "";
+        if (reponse1_user == "D" || reponse1_user == "D)" || reponse1_user == "D) Michelle Williams" || reponse1_user == "Michelle Williams" || reponse1_user == "Michelle" || reponse1_user == "d")
+        {
+            reponse1_comment = good;
+            score++;
+        }
+        else
+        {
+            reponse1_comment = wrong;
+        }
+
+        let question2 = "Question 2 : Dans quelle saison Dawson se retrouve-t-il avec une petite soeur?   In which season does Dawson get a sister? \n\n 1, 2, 3, 4, 5 ou/or 6? \n\n";
+        let reponse2_user = prompt(question2);
+        let reponse2_comment = "";
+        if (reponse2_user == "4" || reponse2_user == "4 ")
+        {
+            reponse2_comment = good;
+            score++;
+        }
+        else
+        {
+            reponse2_comment = wrong;
+        }        
+
+        let question3 = "Question 3 : « Joey », le surnom de Joey Potter, est un diminutif pour quel prénom?   \"Joey\" being a nickname, what is Joey's official first name? \n\n";
+        let reponse3_user = prompt(question3);
+        let reponse3_comment = "";
+        if (reponse3_user == "Josephine" || reponse3_user == "josephine" || reponse3_user == "Josephine " || reponse3_user == "Joséphine" || reponse3_user == "Joséphine " || reponse3_user == "Josephine Lynn")
+        {
+            reponse3_comment = good;
+            score++;
+        }
+        else
+        {
+            reponse3_comment = wrong;
+        }        
+
+        let question4 = "Question 4 : Comment s'appelle le bateau de Pacey?   What did Pacey name his boat? \n\n";
+        let reponse4_user = prompt(question4);
+        let reponse4_comment = "";
+        if (reponse4_user == "True Love" || reponse4_user == "true love" || reponse4_user == "True Love " || reponse4_user == "True  Love" || reponse4_user == "True  Love " || reponse4_user == "The True Love" || reponse4_user == "Le True Love")
+        {
+            reponse4_comment = good;
+            score++;
+        }
+        else
+        {
+            reponse4_comment = wrong;
+        }        
+
+        let question5 = "Question 5 : Où habitait Jen avant de déménager à Capeside?   Where did Jen live before she moved to Capeside? \n\nA) Boston \nB) Seattle \nC) New York \nD) Los Angeles \nE) Philadelphia\n\n";
+        let reponse5_user = prompt(question5);
+        let reponse5_comment = "";
+        if (reponse5_user == "C" || reponse5_user == "C " || reponse5_user == "C)" || reponse5_user == "C) New York" || reponse5_user == "New York" || reponse5_user == "New York City" || reponse5_user == "NYC" || reponse5_user == "c" || reponse5_user == "c ")
+        {
+            reponse5_comment = good;
+            score++;
+        }
+        else
+        {
+            reponse5_comment = wrong;
+        }
+
+        document.write("<h1>Dawson's Creek Quiz</h1> <br><br>");
+    </script>
+
+    <img src="https://images.squarespace-cdn.com/content/v1/5074b6b1e4b01e64d212931a/1458269901072-B1ULZAWCLNDZ5FGUZT32/dawsons_creek_cast.jpg" alt="Personnages | Cast" width=600px class="imgcenter"> 
+    <!-- <img src="dawsons_creek_cast.jpg" alt="Personnages | Cast" width=600px class="imgcenter">  -->
+
+    <script>
+        document.write("<br><h2>Votre score total est : " + score + " sur 5 <br><br>Regardons les réponses! Let's look at the answers! &#128512");
+        document.write("<h3><br>" + question1 + "</h3> <br> <h4>Votre réponse | Your answer: " + reponse1_user + "<br> Bonne réponse | Correct answer: <span> D) Michelle Williams</span>  <br><br>★ Elle avait 16 ans. She was 16.<br><br></h4><h5>" + reponse1_comment + "</h5> <br>");
+        document.write("<br><h5>~*'¨¯¨'*·~*'¨¯¨'*·~*'¨¯¨'*~</h5><h3><br>" + question2 + "</h3> <br> <h4>Votre réponse | Your answer: " + reponse2_user + "<br> Bonne réponse | Correct answer: <span> 4</span>  <br><br>★ Gail et Mitch la nomment Lillian, en l'honneur de la mère de Joey et de Bessie. Gail and Mitch named her Lillian after Joey's and Bessie's mother.<br><br></h4><h5>" + reponse2_comment + "</h5> <br>");
+        document.write("<br><h5>~*'¨¯¨'*·~*'¨¯¨'*·~*'¨¯¨'*~</h5><h3><br>" + question3 + "</h3> <br> <h4>Votre réponse | Your answer: " + reponse3_user + "<br> Bonne réponse | Correct answer: <span> Josephine</span>  <br><br>★ Son nom complet est Josephine Lynn Potter. Her full name is Josephine Lynn Potter.<br><br></h4><h5>" + reponse3_comment + "</h5> <br>");
+        document.write("<br><h5>~*'¨¯¨'*·~*'¨¯¨'*·~*'¨¯¨'*~</h5><h3><br>" + question4 + "</h3> <br> <h4>Votre réponse | Your answer: " + reponse4_user + "<br> Bonne réponse | Correct answer: <span> True Love</span>  <br><br>★ C'est l'épisode du même nom (True Love, S03E23) qui nous a donné le précieux meme de Dawson qui pleure. Of note, the invaluable Crying Dawson Meme comes from the episode titled True Love (S03E23).<br><br></h4><h5>" + reponse4_comment + "</h5> <br>");
+        document.write("<br><h5>~*'¨¯¨'*·~*'¨¯¨'*·~*'¨¯¨'*~</h5><h3><br>" + question5 + "</h3> <br> <h4>Votre réponse | Your answer: " + reponse5_user + "<br> Bonne réponse | Correct answer: <span> C) New York</span>  <br><br>★ Son arrivée a assurément provoqué bien des remous à Capeside!! Jen's arrival surely shook things up in Capeside!!<br><br></h4><h5>" + reponse5_comment + "</h5> <br>");
+    </script>
+
+</body>
+</html>
